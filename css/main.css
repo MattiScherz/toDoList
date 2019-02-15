@@ -1,0 +1,80 @@
+/*  Body */
+
+body {
+    margin: 0;
+    font-family: "inconsolata", "Helvetica", sans-serif;
+    font-size: 1.4em;
+    color: #4f4f4f;
+}
+body a {
+    text-decoration: none;
+}
+
+/* Heading Styles */
+
+h1 {
+    font-family: "Lato", "Helvetica", sans-serif;
+    font-size: 2em;
+    font-weight: 800;
+    color: #333;
+    line-height: 0.5em;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    color: #949494;
+    line-height: 0.5em;
+}
+
+/*  Section class styles */
+
+.header {
+    padding: 20px 0 30px 50px;
+}
+
+.list {
+    background: #f3f4f7;
+    padding: 20px;
+}
+
+/* Button styles */
+
+.addItem {
+    margin-left: 50px;
+    padding-top: 30px;
+}
+
+.addButton {
+    display: block;
+    padding: 1em 2em;
+    font-family: "Lato", "Helvetica", sans-serif;
+    font-size: .6em;
+    background-color: rgb(66, 92, 236);
+    transition: background-color .2s;
+    color: #fff;
+    border-radius: 4px;
+}
+.addButton:hover {
+    background-color: rgb(122, 139, 233);
+    cursor: pointer;
+}
+
+/* To Do List styles */
+
+#toDoList {
+    line-height: 2em;
+}
+
+#toDoList li {
+    transition: opacity .2s;
+}
+#toDoList li:hover {
+    opacity: 0.6;
+}
+
+.complete {
+    text-decoration: line-through; 
+}
