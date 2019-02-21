@@ -9,7 +9,7 @@ let toDoList = [
     }, 
     { 
         listItem: `Meditate`, 
-        comState: false 
+        comState: true 
     }, 
     { 
         listItem: `Read book`, 
@@ -17,13 +17,13 @@ let toDoList = [
     }, 
     { 
         listItem: `Write in journal`, 
-        comState: false 
+        comState: true 
     }, 
     ];
 
 toDoList.push(
     {
-        listItem: `Jumping Jacks`,
+        listItem: `Run a mile`,
         comState: false,
     },
 );
