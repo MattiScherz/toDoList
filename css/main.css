@@ -8,6 +8,11 @@ body {
 }
 body a {
     text-decoration: none;
+    color: #333;
+    transition: color .2s; 
+}
+body a:hover {
+    color: rgb(158, 158, 158);
 }
 
 /* Heading Styles */
@@ -38,29 +43,56 @@ h2 {
 .list {
     background: #F5F7F7;
     padding: 20px 0 20px 0;
+    
 }
 
-/* Button styles */
+/* Form styles */
+
+.hiddenTasks {
+    margin-left: 50px;
+    padding-top: 30px;
+}
 
 .addItem {
     margin-left: 50px;
     padding-top: 30px;
 }
 
-.addButton {
-    display: block;
-    padding: 1em 2em;
+.filterButton {
+    padding: .5em 0em;
+    background: none;
     font-family: "Lato", "Helvetica", sans-serif;
     font-size: .8em;
-    background-color: rgb(66, 92, 236);
-    transition: background-color .2s;
-    color: #fff;
-    border-radius: 8px;
+    transition: color .2s;
+    color: #333;
+    border: none;
 }
-.addButton:hover {
-    background-color: rgb(122, 139, 233);
+.filterButton:hover {
+    color: rgb(161, 161, 161);
     cursor: pointer;
 }
+
+.addButton {
+    margin-bottom: 50px;
+    display: inline-block;
+    padding: .5em 2em;
+    font-family: "Lato", "Helvetica", sans-serif;
+    font-size: .6em;
+    background-color: #2F80ED;
+    transition: background-color .2s;
+    color: #fff;
+    border-radius: 6px;
+}
+.addButton:hover {
+    background-color: rgb(104, 165, 245);
+    cursor: pointer;
+}
+
+
+#item { 
+    padding: .5em;
+}
+
 
 /* To Do List styles */
 
@@ -70,19 +102,21 @@ h2 {
 
 #toDoList li {
     display: block;
-    border-radius: 8px;
+    border-radius: 6px;
     padding: 20px 0 20px 20px;
     margin-bottom: 10px;
     margin-right: 2em;
     background-color: #fff;
     transition: opacity .2s;
 }
+
 #toDoList li:hover {
     opacity: 0.7;
 }
 
 .complete {
     display: block;
-    border: 2px solid rgb(66, 92, 236);  
+    border-left: 10px solid #2F80ED;  
     text-decoration: line-through;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.2);
 }

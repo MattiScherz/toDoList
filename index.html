@@ -11,22 +11,43 @@
   </head>
   <body>
 
+<!-- Header for the app -->
+
     <section class="header">
       <h1>Today</h1>
-      <h2>Friday, February 15</h2>
+      <h2>Friday, March 8</h2>
     </section>
+
+<!-- The to-do list -->
 
     <div class="list">
       <ul id="toDoList"></ul>
     </div>
 
-    <div class="addItem">
-      <a href="#">
-        <button class="addButton" type="button">
-          + Add an item
-        </button>
-      </a>
-    </div>
+<!-- Viewing completed items -->
+
+    <!-- <div class="filterList">
+      <form class="hiddenTasks" id="hiddenTasks">
+        <input type="button" class="filterButton" value="View completed tasks">
+      </form>
+      <ul id="hiddenListItems">
+          
+      </ul>
+    </div>  -->
+
+    <form id="filterList">
+        <span><input type="radio" name="category" value="true" id="filterFalse" checked><label for="filterFalse">To do</label></span>
+        <span><input type="radio" name="category" value="false" id="filterTrue"><label for="filterTrue">Finished</label></span>
+    </form> 
+
+<!-- Adding a new item to list -->
+
+    <form class="addItem" id="addItem">
+      <label for="item" id="itemLabel">New Item</label>
+      <input type="text" name="item" id="item">
+      <input type="submit" class="addButton" value="+ Add">
+
+    </form>
 
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
     <script src="js/main.js"></script>
